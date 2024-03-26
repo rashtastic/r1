@@ -1,0 +1,6 @@
+title: r1
+description: r1
+baseurl: "/r1"
+url: "https://rashtastic.github.io"
+markdown: kramdown
+theme: minima
