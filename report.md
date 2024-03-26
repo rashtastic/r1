@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # FSU Vision 2030 Peers Assessment
 </div>
 <div style="width: 70%; margin: 0px auto;">
