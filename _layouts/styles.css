@@ -7,18 +7,22 @@
     overflow: hidden;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     font-size: 0.75em;
-  }
-  .table thead tr {
+}
+
+.table thead tr {
     background-color: white;
     color: #454545;
-  }
-  .table th, .table td {
+}
+
+.table th,
+.table td {
     padding: 8px 10px;
-  }
-  .table th {
+}
+
+.table th {
     text-align: left;
-  }
-  .table tbody tr {
+}
+
+.table tbody tr {
     line-height: 1.25em;
-  }
-  
+}
