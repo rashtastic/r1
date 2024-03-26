@@ -112,7 +112,7 @@ As you move to the left, the dashed black line shows the overall reconstruction 
 Other research metrics are modeled with varying accuracy. The lowest accuracy metrics, Phase 2 Expenditures and Professional Doctorates Awarded, were de-emphasized by the model in order to focus on the better-estimated metrics. Phase 1 and 2 Expenditures show early and dramatic divergence, suggesting they cannot be modeled as linear combinations of the better-estimated metrics.
 
 <center>
-<img src="img/PCA Reconstruction Accuracy, Absolute.png" width=90%>
+<img src="img/PCA Reconstruction Accuracy, Absolute.png" width="90%">
 </center>
 </div>
 <div style="width: 70%; margin: 0px auto;">
@@ -124,7 +124,7 @@ PCA models trained on per-faculty research metrics show the same trend. There is
 N.B. the proximity of the bottom metrics' rank-1 terminal points does not suggest any similarity between them, only that they are poorly estimated by at that rank.
 
 <center>
-<img src="img/PCA Reconstruction Accuracy, Per Fac.png" width=95%>
+<img src="img/PCA Reconstruction Accuracy, Per Fac.png" width="95%">
 </center>
 <h2 id="perfac_yoho" />
 </div>
