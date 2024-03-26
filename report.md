@@ -253,38 +253,6 @@ We collapse these twelve groups of metrics into twelve individual "constructs" b
 <center>Ancillary IPEDS Constructs</center>
 <br/>
 
-<style>
-  .table {
-    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 80%;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    font-size: 0.75em;
-  }
-  
-  .table thead tr {
-    background-color: white;
-    color: #454545;
-  }
-
-  .table th,
-  .table td {
-    padding: 8px 10px;
-    text-align: ;
-  }
-  
-  .table th {
-    text-align: left;
-  }
-  
-  .table tbody tr {
-    line-height: 1.25em;
-  }
-</style>
-
 <table border=1" class="dataframe table">
   <thead>
     <tr style="text-align: right;">
@@ -774,38 +742,6 @@ Thus I would propose three categories of candidate peers in increasing order of 
 <div style="width: 70%; margin: 0px auto;">
 
 ### Institution Abbreviations
-
-<style>
-  .table {
-    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 80%;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    font-size: 0.75em;
-  }
-  
-  .table thead tr {
-    background-color: white;
-    color: #454545;
-  }
-
-  .table th,
-  .table td {
-    padding: 8px 10px;
-    text-align: ;
-  }
-  
-  .table th {
-    text-align: left;
-  }
-  
-  .table tbody tr {
-    line-height: 1.25em;
-  }
-</style>
 
 <table border="1" class="dataframe table">
   <thead>
@@ -1553,38 +1489,6 @@ Thus I would propose three categories of candidate peers in increasing order of 
 <div style="width: 70%; margin: 0px auto;">
 
 ### IPEDS PCA Variables and Loadings
-
-<style>
-  .table {
-    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 80%;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    font-size: 0.75em;
-  }
-  
-  .table thead tr {
-    background-color: white;
-    color: #454545;
-  }
-
-  .table th,
-  .table td {
-    padding: 8px 10px;
-    text-align: ;
-  }
-  
-  .table th {
-    text-align: left;
-  }
-  
-  .table tbody tr {
-    line-height: 1.25em;
-  }
-</style>
 
 <table border=1" class="dataframe table">
 

@@ -14,7 +14,6 @@
   }
   .table th, .table td {
     padding: 8px 10px;
-    /* Ensure 'text-align' property has a value if you need it */
   }
   .table th {
     text-align: left;
