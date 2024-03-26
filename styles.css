@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+.section {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .table {
     font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
     border-collapse: collapse;
