@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 
 <div style="width: 90%; margin: 0px auto;">
