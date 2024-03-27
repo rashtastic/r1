@@ -6,7 +6,7 @@ layout: default
 
 ## Introduction
 
-This report is an initial examination of peer assessment using Vision 2030 data points of interest. Our goal is to identify institutions comparable to FSU on high-value metrics. The results are not meant to be conclusive, but to inform further interpretation.
+This report presents an initial examination of peer assessment utilizing data points of interest from Vision 2030. Our goal is to identify institutions comparable to FSU on high-value metrics. The results are not meant to be conclusive, but to inform further interpretation.
 
 In order to identify institutions comparable to FSU we must first understand how institutions vary. What follows is a multivariate exploratory data analysis of institutional characteristics. Observed patterns are used to inform a peer matching strategy.
 
@@ -14,9 +14,9 @@ The population of institutions is [Carnegie R1 Institutions](https://carnegiecla
 
 ### Data
 
-Data is primarily sourced from Academic Analytics and IPEDS.
+The primary sources of data are Academic Analytics and the Integrated Postsecondary Education Data System (IPEDS).
 
-There are two broad areas of interest reflected in metrics: research activity and academic characteristics.
+There are two broad areas of interest reflected in metrics: per-capita research activity and academic characteristics.
 
 Research activity metrics are per-capita metrics reflecting for instance the number of articles published per faculty count. Academic characteristics include <code>% Pell</code>, <code>Graduation Rate</code>, <code>Pell Graduation Rate</code>, and <code>Pell Graduation Rate Gap</code>.
 
@@ -24,9 +24,9 @@ Further relevant metrics are pulled from IPEDS.
 
 <details>
 <summary>Additional Data Details</summary>
-<p>All data used in statistical models are first normalized to have mean 0 and standard deviation 1.</p>
+<p>All data used in statistical models is first normalized to have mean 0 and standard deviation 1.</p>
 
-<p>Research expenditures metrics are <code>Phase 1 Expenditures</code> and <code>Phase 2 Expenditures</code>. Those, along with their per-faculty figures, are initially on a thousands scale. For this analysis we apply a log transform.</p>
+<p>Research expenditures metrics are <code>Phase 1 Expenditures</code> and <code>Phase 2 Expenditures</code>. "These metrics, including their per-faculty figures, are initially measured on a scale of thousands. For this analysis we apply a log transform.</p>
 
 <p>Metrics of Primary Interest:</p>
   <ul>
