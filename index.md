@@ -228,6 +228,8 @@ IPEDS data is voluminous because of its level of detail. This level of detail pr
 
 We collapse these twelve groups of metrics into twelve individual "constructs" by estimating rank-1 PCA representations of each group. The resulting groups and their rank-1 percent of variance explained are shown in the following table. A detailed listing of IPEDS variables included in each group can be found in [Appendix - IPEDS PCA Variables and Loadings](#ipeds-pca-variables-and-loadings).
 
+<br/>
+
 <h4 class="caption-heading">Ancillary IPEDS Constructs</h4>
 
 <div class="table-wrapper">
