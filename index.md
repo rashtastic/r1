@@ -18,7 +18,7 @@ Data is primarily sourced from Academic Analytics and IPEDS.
 
 There are two broad areas of interest reflected in metrics: research activity and academic characteristics.
 
-Research activity metrics are per-capita metrics reflecting for instance the number of articles published per faculty count. Academic characteristics include % Pell, Graduation Rate, Pell Graduation Rate, and Pell Graduation Rate Gap.
+Research activity metrics are per-capita metrics reflecting for instance the number of articles published per faculty count. Academic characteristics include <code>% Pell</code>, <code>Graduation Rate</code>, <code>Pell Graduation Rate</code>, and <code>Pell Graduation Rate Gap</code>.
 
 Further relevant metrics are pulled from [IPEDS](#correlations-with-ipeds-indicators).
 
@@ -60,7 +60,7 @@ Further relevant metrics are pulled from [IPEDS](#correlations-with-ipeds-indica
 
 ### Methodology and Outline
 
-We first examine the accuracy of [Principal Component Analysis on Metrics of Interest](#principal-component-analysis-on-metrics-of-interest). This section provides an initial view of the correlation structure of institutional research metrics. It is observed that certain metrics appear tightly correlated (Articles/Faculty, Citations/Faculty, and Awards/Faculty) while others lack strong correlations with other metrics.
+We first examine the accuracy of [Principal Component Analysis on Metrics of Interest](#principal-component-analysis-on-metrics-of-interest). This section provides an initial view of the correlation structure of institutional research metrics. It is observed that certain metrics appear tightly correlated (<code>Articles/Faculty</code>, <code>Citations/Faculty</code>, and <code>Awards/Faculty</code>) while others lack strong correlations with other metrics.
 
 This is followed by a closer look at the [Correlation Structure](#correlational-eda) of groups of metrics by similarity.
 
@@ -122,12 +122,12 @@ N.B. the proximity of the bottom metrics' rank-1 terminal points does not sugges
 
 Though somewhat unconventional, PCA can be used to estimate similarity of features directly.
 
-The tentative interpretation is that Books/Fac and Chapters/Fac are only correlated with each other; % Pell and Pell Graduation Rate Gap are only correlated with each other; Graduation Rate and Pell Graduation Rate are strongly correlated; and that most research productivity metrics appear to generally covary with some standout exceptions.
-
 <h4 class="caption-heading">Research Metrics Biplot</h4>
 <div class="image-container">
     <img src="img/Research Metrics Biplot.png" style="width: 50%">
 </div>
+
+The tentative interpretation is that <code>Books/Faculty</code> and <code>Chapters/Faculty</code> are only correlated with each other; <code>% Pell</code> and <code>Pell Graduation Rate Gap</code> are only correlated with each other; <code>Graduation Rate</code> and <code>Pell Graduation Rate</code> are strongly correlated; and that most research productivity metrics appear to generally covary with some standout exceptions.
 
 <br/>
 
@@ -644,32 +644,41 @@ Thus I would propose three categories of candidate peers in increasing order of 
 
 ## Appendix
 
+<details>
+<summary>Biplot of Student/Academic Peers</summary>
 <h4 class="caption-heading">Biplot of Student/Academic Peers</h4>
 <div class="image-container">
     <img src="img/Student Peers Biplot.png" style="width: 80%">
 </div>
-<br/>
+</details>
 
+<details>
+<summary>Graduation Rate against Research</summary>
 <h4 class="caption-heading">Graduation Rate against Research</h4>
 <div class="image-container">
     <img src="img/Grad against Research Scatter.png" style="width: 60%">
 </div>
-<br/>
+</details>
 
+<details>
+<summary>Pell against Research</summary>
 <h4 class="caption-heading">Pell against Research</h4>
 <div class="image-container">
     <img src="img/%25 Pell against Research Scatter.png" style="width: 60%">
 </div>
-<br/>
+</details>
 
+<details>
+<summary>Pell Graduation Rate Gap against Research</summary>
 <h4 class="caption-heading">Pell Graduation Rate Gap against Research</h4>
 <div class="image-container">
     <img src="img/Pell Grad Rate Gap against Research Scatter.png" style="width: 60%">
 </div>
+</details>
+
+<details>
+<summary>Institution Abbreviations</summary>
 <br/>
-
-### Institution Abbreviations
-
 <table class="table">
   <thead>
     <tr style="text-align: right;">
@@ -1411,10 +1420,11 @@ Thus I would propose three categories of candidate peers in increasing order of 
     </tr>
   </tbody>
 </table>
+</details>
+
+<details>
+<summary>IPEDS PCA Variables and Loadings</summary>
 <br/>
-
-### IPEDS PCA Variables and Loadings
-
 <div class="image-container">
 <table class="table">
 <thead>
@@ -3728,3 +3738,4 @@ Thus I would propose three categories of candidate peers in increasing order of 
 </table>
 
 </div>
+</details>
