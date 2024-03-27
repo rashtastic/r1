@@ -66,7 +66,7 @@ This is followed by a closer look at the [Correlation Structure](#correlational-
 
 An additional exploratory step looks for [IPEDS Metrics](#correlations-with-ipeds-indicators) showing high correlations with the primary metrics, which introduces additional avenues of analysis.
 
-The results of these initial examinations informs peer selection via [PCA Biplots](#peer-selection-via-biplots) and via a [Distance Criterion](#peer-selection-via-nearness).
+The results of these initial examinations informs peer selection via [PCA Biplots](#peer-selection-via-biplots) and via a [Distance Criterion](#peer-selection-via-nearness). We conclude with a candidate [Peer Selection](#peer-selection).
 
 ## Principal Component Analysis on Metrics of Interest
 
