@@ -6,9 +6,9 @@ layout: default
 
 ## Introduction
 
-This report is an initial examination of peer assessment using Vision 2030 data points of interest. Our goal is to identify institutions comparable to FSU in terms of similarity on institutional characteristics. The results are not meant to be conclusive, but to inform further interpretation.
+This report is an initial examination of peer assessment using Vision 2030 data points of interest. Our goal is to identify institutions comparable to FSU on high-value metrics. The results are not meant to be conclusive, but to inform further interpretation.
 
-In order to identify institutions comparable to FSU we must first understand how institutions vary. What follows is a multivariate exploratory data analysis of institutional characteristics. These patterns are used to inform a peer matching strategy.
+In order to identify institutions comparable to FSU we must first understand how institutions vary. What follows is a multivariate exploratory data analysis of institutional characteristics. Observed patterns are used to inform a peer matching strategy.
 
 The population of institutions is [Carnegie R1 Institutions](https://carnegieclassifications.acenet.edu/carnegie-classification/classification-methodology/basic-classification/) captured in IPEDS. The sample size is 146.
 
@@ -20,7 +20,7 @@ There are two broad areas of interest reflected in metrics: research activity an
 
 Research activity metrics are per-capita metrics reflecting for instance the number of articles published per faculty count. Academic characteristics include <code>% Pell</code>, <code>Graduation Rate</code>, <code>Pell Graduation Rate</code>, and <code>Pell Graduation Rate Gap</code>.
 
-Further relevant metrics are pulled from [IPEDS](#correlations-with-ipeds-indicators).
+Further relevant metrics are pulled from IPEDS.
 
 <details>
 <summary>Additional Data Details</summary>
@@ -52,23 +52,23 @@ Further relevant metrics are pulled from [IPEDS](#correlations-with-ipeds-indica
   </ul>
 
 
-<p>The CUNY Graduate School and University Center's reported value for Research Doctorates per Faculty is excluded as an outlier.</p>
+<p>The CUNY Graduate School and University Center's reported value for <code>Research Doctorates/Faculty</code> is excluded as an outlier.</p>
 <img src="img/CUNY Research Doctorates Outlier.png"/>
-
-<p>The Universities of Mississippi, New Hampshire, Maryland, Oklahoma, Ohio University, and Oregon State University showed original Phase 1 or Phase 2 values at 0. That figure appears inconsistent with the distribution of values of the population, so those values are set to be missing and not used.</p>
+<br/>
+<p>The Universities of Mississippi, New Hampshire, Maryland, Oklahoma, Ohio University, and Oregon State University showed original Phase 1 or Phase 2 values at 0. That figure appears inconsistent with the distribution of values of the population and are discarded.</p>
 </details>
 
 ### Methodology and Outline
 
-We first examine the accuracy of [Principal Component Analysis on Metrics of Interest](#principal-component-analysis-on-metrics-of-interest). This section provides an initial view of the correlation structure of institutional research metrics. It is observed that certain metrics appear tightly correlated (<code>Articles/Faculty</code>, <code>Citations/Faculty</code>, and <code>Awards/Faculty</code>) while others lack strong correlations with other metrics.
+We first examine the accuracy of [Principal Component Analysis on Primary Metrics](#principal-component-analysis-on-primary-metrics). This section provides an initial view of the correlation structure of institutional research metrics. It is observed that certain metrics appear tightly correlated (<code>Articles/Faculty</code>, <code>Citations/Faculty</code>, and <code>Awards/Faculty</code>) while others lack strong correlations with other metrics.
 
 This is followed by a closer look at the [Correlation Structure](#correlational-eda) of groups of metrics by similarity.
 
 An additional exploratory step looks for [IPEDS Metrics](#correlations-with-ipeds-indicators) showing high correlations with the primary metrics, introducing additional avenues of analysis.
 
-The results of these initial examinations informs peer selection via [PCA Biplots](#peer-selection-via-biplots) and via a [Distance Criterion](#peer-selection-via-nearness). We conclude with a candidate [Peer Selection](#peer-selection).
+The results of these initial examinations informs peer selection via [PCA Biplots](#peer-selection-via-biplots) and via a [Distance Criterion](#peer-selection-via-nearness). We conclude with a candidate [Selection of Peers](#peer-selection).
 
-## Principal Component Analysis on Metrics of Interest
+## Principal Component Analysis on Primary Metrics
 
 PCA is a dimension reduction technique which produces a representation of data with fewer columns. The reduced representation of data is created by taking weighted averages of initial data columns in a way known to be the optimal linear reduction.
 
@@ -100,11 +100,11 @@ Model accuracy is observed at varying ranks.
     <img src="img/PCA Reconstruction Accuracy, Absolute.png" style="width: 60%">
 </div>
 
-To the far right of the chart, models trained with the same rank as the number of columns are able to perfectly represent the dataset because no dimension reduction has actually occurred.
+To the far right of the chart, models trained with the same rank as the number of initial data columns are able to perfectly represent the dataset because no dimension reduction has actually occurred.
 
 As you move to the left, the dashed black line shows the overall reconstruction accuracy decreasing. The solid lines show the decreasing accuracy of reconstructing each individual metric, which clearly lose accuracy at different rates. The final rank-1 model has converged on retaining accuracy of Articles, Citations, and Awards, which can reproduce those columns at $R^2 > .9$. Those three features dominate the rank-1 model.
 
-Other research metrics are modeled with varying accuracy. The lowest accuracy metrics, Phase 2 Expenditures and Professional Doctorates Awarded, were de-emphasized by the model in order to focus on the better-estimated metrics. This is the nature of dimension reduction. Phase 1 and 2 Expenditures show early and dramatic divergence, suggesting they cannot be modeled as linear combinations of the better-estimated metrics.
+Other research metrics are modeled with varying accuracy. The lowest accuracy metrics, <code>Phase 2 Expenditures</code> and <code>Professional Doctorates Awarded</code>, were de-emphasized by the model in order to focus on the better-estimated metrics. This is the nature of dimension reduction. Phase 1 and 2 Expenditures show early and dramatic divergence, suggesting they cannot be modeled as linear combinations of the better-estimated metrics.
 
 <br/>
 ### Per-Faculty Metrics of Research Activity
@@ -120,13 +120,13 @@ N.B. the proximity of the bottom metrics' rank-1 terminal points does not sugges
 <br/>
 ### Research Metrics Biplot
 
-Though somewhat unconventional, PCA can be used to estimate similarity of features directly.
+Though a somewhat unconventional approach, PCA can be used to estimate similarity of features directly.
 
 <h4 class="caption-heading">Research Metrics Biplot</h4>
 <div class="image-container">
     <img src="img/Research Metrics Biplot.png" style="width: 50%">
 </div>
-
+<br/>
 The tentative interpretation is that <code>Books/Faculty</code> and <code>Chapters/Faculty</code> are only correlated with each other; <code>% Pell</code> and <code>Pell Graduation Rate Gap</code> are only correlated with each other; <code>Graduation Rate</code> and <code>Pell Graduation Rate</code> are strongly correlated; and that most research productivity metrics appear to generally covary with some standout exceptions.
 
 <br/>
@@ -139,18 +139,18 @@ With some loose notions of what to look for, we start examining correlations dir
 
 A correlation heatmap is a representation of a correlation matrix with correlation intensity shown by a color. In this case, red indicates a strong positive correlation, blue a strong negative correlation, and white the absence of a linear relationship.
 
-The arrangement of metrics is chosen to show clusters of covarying behavior. The cells along the diagonal are all deep red, because diagonal elements represent where a metric on the y-axis intersects with itself on the x-axis, so it achieves the maximum correlation possible of 1.0.
+The arrangement of metrics is chosen to show clusters of covarying behavior. The cells along the diagonal are all deep red, because diagonal elements represent where a metric on the vertical axis intersects with itself on the horizontal axis achieving the maximum possible correlation of 1.0.
 
 <h4 class="caption-heading">Research Metrics Correlation Heatmap</h4>
 <div class="image-container">
     <img src="img\Research Metrics Heatmap.png" style="width: 50%">
 </div>
 
-As expected, we see some correlational "islands" where two metrics covary with each other but seemingly not with anything else. Other metrics are totally isolated.
+As expected, we see some correlational "islands" where two metrics covary with each other but seemingly not with anything else. Certain other metrics are totally isolated.
 - <code>Books/Faculty</code> and <code>Chapters/Faculty</code> appear only correlated with each other.
 - <code>Phase 1/Faculty</code> and <code>Phase 2/Faculty</code>. These two do not have an overwhelming positive correlation with each other, but show only weak correlations with anything else.
 - <code>Professional Doctorates/Faculty</code> and <code>Total Doctorates/Faculty</code> share a similar relationship as <code>Phase 1/Faculty</code> and <code>Phase 2/Faculty</code>.
-- <code>Clinical Trials/Faculty</code> and <code>Conference Proceedings/Faculty</code> each stand out as isolated metrics, not strongly correlated with each other or with any other metric. In fact, that pair appears to have a slight negative correlation between them.
+- <code>Clinical Trials/Faculty</code> and <code>Conference Proceedings/Faculty</code> each stand out as isolated metrics, not strongly correlated with each other or with any other metric. In fact, that pair appears to have a slight negative correlation.
 - <code>Graduation Rate</code> and <code>Pell Graduation Rate</code> are nearly perfectly correlated. Further, they show some mild correlations with some research productivity metrics.
 - <code>Pell Graduation Rate Gap</code> and <code>% Pell</code> are both isolated metrics with exclusively negative or near-zero correlations with anything else. They are negatively correlated with each other, strongly negatively correlated with graduation rate metrics, and mildly negatively correlated with almost all research productivity metrics.
 
@@ -161,7 +161,7 @@ We take a closer look at research metrics which appear partly isolated from othe
     <img src="img\Research Selected Metrics Heatmap.png" style="width: 40%">
 </div>
 
-<code>Articles/Faculty</code> is included as a proxy for the research metrics which did seem to vary with each other. We interpret low correlations between metrics to mean that, on average, an increase in one metric does not show a pattern of increasing the other metric. That is, research productivity in one area cannot be used to infer productivity in another area.
+<code>Articles/Faculty</code> is included as a proxy for the research metrics which did seem to vary with each other. We interpret low correlations between metrics to mean that, on average, an increase in one metric does not coincide with an increase in the other. That is, research productivity in one area cannot be used to infer productivity in another area.
 
 <code>Conference Proceedings/Faculty</code> shows a particularly weak relationship with research expenditures.
 
@@ -171,7 +171,7 @@ Finally, high productivity in conferences appears unrelated to performance in cl
 
 ### Scatterplots
 
-Organizing research metrics into covariates vs. islands helps us organize the next level of detail.
+Organizing research metrics into covariates and islands helps us approach the next level of detail.
 
 #### Type I Research Metrics
 
@@ -184,7 +184,7 @@ First, we examine the cluster of research outputs which appeared to all covary. 
 
 Per-faculty metrics for Citations, Articles, and Patents show positive correlations, and would show higher values with the removal of some likely outlier institutions.
 
-<code>Highly-Prestigious Awards/Faculty</code> and <code>National Academy Members/Faculty</code> follow general positive correlations with the other metrics, but their distributions are more dominated by clustering at low values. This may be  visual artifact of outliers in both cases. Both show convincing positive correlations with <code>Awards/Faculty</code>. Therefore, though they may be less sensitive measures of research productivity, they appear to fit in with this cluster of metrics. It appears likely that these metrics can be said to reflect the same notion of "research activity". We categorize these as "Type I" metrics.
+<code>Highly-Prestigious Awards/Faculty</code> and <code>National Academy Members/Faculty</code> follow general positive correlations with the other metrics, but their distributions are more dominated by clustering at low values. This may be  visual artifact of outliers in both cases. Both metrics show convincing positive correlations with <code>Awards/Faculty</code>. Therefore, though they may be less sensitive measures of research productivity, they appear to fit in with this cluster of metrics. Overall, thus cluster of metrics may reflect a single coherent notion of research activity. We categorize these as "Type I" metrics.
 
 <h4>Type II Research Metrics</h4>
 
@@ -226,7 +226,7 @@ IPEDS has extremely granular metrics on a broad range of institutional character
 
 IPEDS data is voluminous because of its level of detail. This level of detail produces an enormous amount of redundancy. For instance, consider that the strongest correlation in our data so far is between <code>Graduation Rate</code> and <code>Pell Graduation Rate</code>. The high correlation is to be expected. Now consider IPEDS data, which includes graduation rates calculated on nearly every possible combination of race, gender, age, residency, etc. We are sifting through thousands of additional metrics and selecting hundreds, but redundancy keeps things simple. All metrics showing high correlation ($\vert r\vert \ge .85$) with per-faculty research outcomes can be collapsed into a dozen coherent concepts, identifiable by which parts of IPEDS they were sourced from as well as their internal correlations.
 
-We collapse these twelve groups of metrics into twelve individual "constructs" by estimating rank-1 PCA representations of each group. The resulting groups and their rank-1 percent of variance explained are shown in the following table. A detailed listing of IPEDS variables included in each group can be found in [Appendix - IPEDS PCA Variables and Loadings](#ipeds-pca-variables-and-loadings).
+We collapse these twelve groups of metrics into twelve individual "constructs" by estimating rank-1 PCA representations of each group. The resulting groups and their rank-1 percent of variance explained are shown in the following table. A detailed listing of IPEDS variables included in each group can be found in [Appendix - IPEDS PCA Variables and Loadings](#ipca).
 
 <br/>
 
@@ -1425,7 +1425,7 @@ Thus I would propose three categories of candidate peers in increasing order of 
 <details>
 <summary>IPEDS PCA Variables and Loadings</summary>
 <br/>
-<div class="image-container">
+<a class="image-container" name="ipca"></a>
 <table class="table">
 <thead>
 <tr style="text-align: right;">
