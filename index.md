@@ -351,7 +351,7 @@ We limit our discussion to some brief highlights
 - Biology graduate enrollment and STEM employees emerge as rare correlates of <code>Clinical Trials/Faculty</code>.
 - Female enrollment is mildly negatively correlated with most research outcomes and strongly negatively correlated with <code>Conference Proceedings/Faculty</code>.
 
-We view how these new metrics correlate with two selected metrics: <code>Citations/Faculty</code> and <code>Phase I/Faculty</code>. While we do not attempt a detailed examination here, it is noted that distributional non-linearities such as clustered observations and potential outliers are present. Diagnosing these anomalies may prove insightful, or their resolution may improve the strength of observed correlations.
+We view how these new metrics correlate with two selected metrics: <code>Citations/Faculty</code> and <code>Phase 1/Faculty</code>. While we do not attempt a detailed examination here, it is noted that distributional non-linearities such as clustered observations and potential outliers are present. Diagnosing these anomalies may prove insightful, or their resolution may improve the strength of observed correlations.
 
 <h4 class="caption-heading">IPEDS Constructs against Citations per Faculty</h4>
 <div class="image-container">
