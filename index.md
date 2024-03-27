@@ -408,7 +408,7 @@ As before, we zoom in to view FSU neighbors.
     <img src="img/Research and STEM Biplot Zoom.png" style="width: 80%">
 </div>
 
-It is not always possible to directly interpret proximity of points in biplots. The cost of projecting multiple dimensions into two dimensions is that it is no longer clear what upwards movement or lateral movement means; any movement is simultaneously reflecting all input metrics the model was trained on.
+It is not always possible to directly interpret proximity of points in biplots. The cost of projecting multiple dimensions into two dimensions is that it is no longer clear what upward movement or lateral movement means; any movement is simultaneously reflecting all input metrics the model was trained on.
 
 Nonetheless, we note the presence of overlaps of FSU neighbors from this biplot and the last. We will return to these.
 
