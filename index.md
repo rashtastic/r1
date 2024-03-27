@@ -2,13 +2,13 @@
 layout: default
 ---
 
-# FSU Vision 2030 Peers Assessment
+<h1>FSU Vision 2030 Peers Assessment</h1>
 
 ## Introduction
 
 This report is an initial examination of peer assessment using Vision 2030 data points of interest. Our goal is to identify institutions comparable to FSU in terms of similarity on institutional characteristics. The results are not meant to be conclusive, but to inform further interpretation.
 
-In order to address institutions comparable to FSU, we must address how institutions vary. What follows is a multivariate exploratory data analysis of institutional characteristics. These patterns are used to inform a peer matching strategy.
+In order to identify institutions comparable to FSU we must first understand how institutions vary. What follows is a multivariate exploratory data analysis of institutional characteristics. These patterns are used to inform a peer matching strategy.
 
 The population of institutions is [Carnegie R1 Institutions](https://carnegieclassifications.acenet.edu/carnegie-classification/classification-methodology/basic-classification/) captured in IPEDS. The sample size is 146.
 
@@ -26,7 +26,7 @@ Further relevant metrics are pulled from [IPEDS](#correlations-with-ipeds-indica
 <summary>Additional Data Details</summary>
 <p>All data used in statistical models are first normalized to have mean 0 and standard deviation 1.</p>
 
-<p>Research expenditures metrics are <code>Phase 1 Expenditures</code> and <code>Phase 2 Expenditures</code>. Those, along with their per-faculty figures, are initially on a thousands scale. For this analysis we log-transform these metrics.</p>
+<p>Research expenditures metrics are <code>Phase 1 Expenditures</code> and <code>Phase 2 Expenditures</code>. Those, along with their per-faculty figures, are initially on a thousands scale. For this analysis we apply a log transform.</p>
 
 <p>Metrics of Primary Interest:</p>
   <ul>
@@ -64,7 +64,7 @@ We first examine the accuracy of [Principal Component Analysis on Metrics of Int
 
 This is followed by a closer look at the [Correlation Structure](#correlational-eda) of groups of metrics by similarity.
 
-An additional exploratory step looks for [IPEDS Metrics](#correlations-with-ipeds-indicators) showing high correlations with the primary metrics, which introduces additional avenues of analysis.
+An additional exploratory step looks for [IPEDS Metrics](#correlations-with-ipeds-indicators) showing high correlations with the primary metrics, introducing additional avenues of analysis.
 
 The results of these initial examinations informs peer selection via [PCA Biplots](#peer-selection-via-biplots) and via a [Distance Criterion](#peer-selection-via-nearness). We conclude with a candidate [Peer Selection](#peer-selection).
 
@@ -76,7 +76,7 @@ PCA is a dimension reduction technique which produces a representation of data w
   <summary>PCA Primer</summary>
 <p>PCA is useful in situations where data is thought to operate in a lower-dimensional space than how it presents.</p>
 
-<p>It will be shown, for instance, that the <code>Books/Faculty</code> metric and the <code>Chapters/Faculty</code> metrics are highly correlated. In a PCA model, those two columns could be represented by a single column which is able to recover the original two columns with high accuracy.</p>
+<p>It will be shown, for instance, that the <code>Books/Faculty</code> and <code>Chapters/Faculty</code> metrics are highly correlated. In a PCA model, those two columns could be represented by a single column which is able to recover the original two columns with high accuracy.</p>
 
 <p>Given initial columns of data, PCA models are applied to estimate a desired number of output columns called the <code>rank</code> of the model. The lowest rank that is able to model the dataset is thought to be the underlying dimensionality of the data. Having a low-rank model also simplifies analysis and can mitigate issues like missingness and noise.</p>
 
@@ -87,7 +87,7 @@ PCA is a dimension reduction technique which produces a representation of data w
 
 <p>PCA is a multivariate technique, meaning it is used to analyze a dataset in its entirety rather than to predict a single outcome. Further, it is pure calculation. The model does not require any assumptions be made about the underlying data. You can always apply PCA, and whether the result accurately models the data or not, it will always produce the optimal linear combinations for the chosen rank. In particular, PCA is not an inferential model and does not test a hypothesis or produce a p-value. It can be thought of as a summarization technique like a correlation or a median. The other major dimension reduction technique, Factor Analysis, is the appropriate choice for building a theoretical model based on an assumed probability distribution of the data. Thus PCA has a tendency to be applied in areas where the goal is accurate modeling of data versus Factor Analysis being used when trying to develop a theoretical model of the phenomenon underlying the data.</p>
 
-<p>In practice, however, any time PCA is applied, a Factor Analysis style interpretation is inescapable. The lower-dimensional representation of data is intuitively interpreted as latent factors in an implicit theoretical model of the data. Because PCA produces orthogonal components, the model can be thought of as finding the underlying axes along which the data varies. We do not try to avoid these interpretations, and somewhat improperly call dimension-reduced representations "constructs". Ultimately, we do not need principal components to have genuine theoretical meaning, we only need them to be useful representations of covariance structure.</p>
+<p>In practice, however, any time PCA is applied, a Factor Analysis style interpretation is inescapable. The lower-dimensional representation of data is intuitively interpreted as latent factors in an implicit theoretical model of the data. Because PCA produces orthogonal components, the model can be thought of as finding the underlying axes along which the data varies. We do not try to avoid these interpretations and, somewhat improperly, call lower-dimension representations "constructs". Ultimately, we do not need principal components to have genuine theoretical meaning, we only need them to be useful representations of covariance structure.</p>
 </details>
 
 We examine PCA on absolute metrics of research activity followed by per-faculty metrics.
@@ -102,9 +102,9 @@ Model accuracy is observed at varying ranks.
 
 To the far right of the chart, models trained with the same rank as the number of columns are able to perfectly represent the dataset because no dimension reduction has actually occurred.
 
-As you move to the left, the dashed black line shows the overall reconstruction accuracy decreasing. The solid lines show the decreasing accuracy of reconstructing each individual metric, which clearly lose accuracy at different rates. The final rank-1 model has converged on retaining accuracy of Articles, Citations, and Awards, which can reproduce those columns at $R^2 > .9$. Those three features essentially dominate the rank-1 model.
+As you move to the left, the dashed black line shows the overall reconstruction accuracy decreasing. The solid lines show the decreasing accuracy of reconstructing each individual metric, which clearly lose accuracy at different rates. The final rank-1 model has converged on retaining accuracy of Articles, Citations, and Awards, which can reproduce those columns at $R^2 > .9$. Those three features dominate the rank-1 model.
 
-Other research metrics are modeled with varying accuracy. The lowest accuracy metrics, Phase 2 Expenditures and Professional Doctorates Awarded, were de-emphasized by the model in order to focus on the better-estimated metrics. Phase 1 and 2 Expenditures show early and dramatic divergence, suggesting they cannot be modeled as linear combinations of the better-estimated metrics.
+Other research metrics are modeled with varying accuracy. The lowest accuracy metrics, Phase 2 Expenditures and Professional Doctorates Awarded, were de-emphasized by the model in order to focus on the better-estimated metrics. This is the nature of dimension reduction. Phase 1 and 2 Expenditures show early and dramatic divergence, suggesting they cannot be modeled as linear combinations of the better-estimated metrics.
 
 <br/>
 ### Per-Faculty Metrics of Research Activity
@@ -115,7 +115,7 @@ Other research metrics are modeled with varying accuracy. The lowest accuracy me
 
 PCA models trained on per-faculty research metrics show the same trend. There is a relatively convincing cluster of metrics at $R^2>.6$ for rank 1 with the remaining metrics showing sharp decline with decreasing rank.
 
-N.B. the proximity of the bottom metrics' rank-1 terminal points does not suggest any similarity between them, only that they are poorly estimated by at that rank.
+N.B. the proximity of the bottom metrics' rank-1 terminal points does not suggest any similarity between them, only that they are poorly estimated at that rank.
 
 <br/>
 ### Research Metrics Biplot
