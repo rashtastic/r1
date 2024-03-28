@@ -151,7 +151,7 @@ As expected, we see some correlational "islands" where two metrics covary with e
 - <code>Phase 1/Faculty</code> and <code>Phase 2/Faculty</code>. These two do not have an overwhelming positive correlation with each other, but show only weak correlations with anything else.
 - <code>Professional Doctorates/Faculty</code> and <code>Total Doctorates/Faculty</code> share a similar relationship as <code>Phase 1/Faculty</code> and <code>Phase 2/Faculty</code>.
 - <code>Clinical Trials/Faculty</code> and <code>Conference Proceedings/Faculty</code> each stand out as isolated metrics, not strongly correlated with each other or with any other metric. In fact, that pair appears to have a slight negative correlation.
-- <code>Graduation Rate</code> and <code>Pell Graduation Rate</code> are nearly perfectly correlated. Further, they show some mild correlations with some research productivity metrics.
+- <code>Graduation Rate</code> and <code>Pell Graduation Rate</code> are nearly perfectly correlated. Further, they show mild correlations with some research productivity metrics.
 - <code>Pell Graduation Rate Gap</code> and <code>% Pell</code> are both isolated metrics with exclusively negative or near-zero correlations with anything else. They are negatively correlated with each other, strongly negatively correlated with graduation rate metrics, and mildly negatively correlated with almost all research productivity metrics.
 
 We take a closer look at research metrics which appear partly isolated from others.
