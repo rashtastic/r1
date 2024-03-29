@@ -681,6 +681,7 @@ We apply the two primary peer identification methods on R1 Public institutions.
 <div class="image-container">
     <img src="img/R1 Public Research Peers Biplot.png" style="width: 80%">
 </div>
+<br/>
 
 ## Appendix
 
