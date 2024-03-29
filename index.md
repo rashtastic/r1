@@ -636,16 +636,57 @@ Thus I would propose three categories of candidate peers in increasing order of 
 (see Appendix)
 
 <ol start="18">
-  <li>Rutgers</li>
+  <li>Rutgers University</li>
 </ol>
 
 <br/>
 <br/>
 
+## Peer Selection on R1 Public Institutions
+
+We apply the two primary peer identification methods on R1 Public institutions.
+
+<h4 class="caption-heading">Nearest 25 Public R1 Institutions by Distance Metric</h4>
+
+<ol>
+    <li>University of South Florida</li>
+    <li>University of Massachusetts-Amherst</li>
+    <li>Georgia State University</li>
+    <li>University of South Carolina-Columbia</li>
+    <li>University of Georgia</li>
+    <li>Michigan State University</li>
+    <li>University of Connecticut</li>
+    <li>Arizona State University</li>
+    <li>University of Illinois Chicago</li>
+    <li>The University of Alabama</li>
+    <li>University of Missouri</li>
+    <li>SUNY at Albany</li>
+    <li>University of Virginia</li>
+    <li>University of Arizona</li>
+    <li>University of Delaware</li>
+    <li>University of Houston</li>
+    <li>Pennsylvania State University</li>
+    <li>Colorado State University</li>
+    <li>UT San Antonio</li>
+    <li>UC Riverside</li>
+    <li>George Mason University</li>
+    <li>Rutgers University</li>
+    <li>University of Hawaii at Manoa</li>
+    <li>Florida International University</li>
+    <li>Temple University</li>
+</ol>
+<br/>
+
+<h4 class="caption-heading">Biplot of per-Faculty Research Metrics on Public R1 Institutions</h4>
+<div class="image-container">
+    <img src="img/R1 Public Research Peers Biplot.png" style="width: 80%">
+</div>
+
 ## Appendix
 
 <details>
 <summary>Biplot of Student/Academic Peers</summary>
+Population is R1 institutions.
 <h4 class="caption-heading">Biplot of Student/Academic Peers</h4>
 <div class="image-container">
     <img src="img/Student Peers Biplot.png" style="width: 80%">
@@ -654,6 +695,7 @@ Thus I would propose three categories of candidate peers in increasing order of 
 
 <details>
 <summary>Graduation Rate against Research</summary>
+Population is R1 institutions.
 <h4 class="caption-heading">Graduation Rate against Research</h4>
 <div class="image-container">
     <img src="img/Grad against Research Scatter.png" style="width: 60%">
@@ -662,6 +704,7 @@ Thus I would propose three categories of candidate peers in increasing order of 
 
 <details>
 <summary>Pell against Research</summary>
+Population is R1 institutions.
 <h4 class="caption-heading">Pell against Research</h4>
 <div class="image-container">
     <img src="img/%25 Pell against Research Scatter.png" style="width: 60%">
@@ -670,6 +713,7 @@ Thus I would propose three categories of candidate peers in increasing order of 
 
 <details>
 <summary>Pell Graduation Rate Gap against Research</summary>
+Population is R1 institutions.
 <h4 class="caption-heading">Pell Graduation Rate Gap against Research</h4>
 <div class="image-container">
     <img src="img/Pell Grad Rate Gap against Research Scatter.png" style="width: 60%">
@@ -966,7 +1010,7 @@ Thus I would propose three categories of candidate peers in increasing order of 
     <tr>
       <th>55</th>
       <td>Rutgers University-New Brunswick</td>
-      <td>Rutgers</td>
+      <td>Rutgers University</td>
     </tr>
     <tr>
       <th>56</th>
