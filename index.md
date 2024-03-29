@@ -687,38 +687,42 @@ We apply the two primary peer identification methods on R1 Public institutions.
 
 <details>
 <summary>Biplot of Student/Academic Peers</summary>
-Population is R1 institutions.
+<p style="margin-left: 15px;">Population is R1 institutions.</p>
 <h4 class="caption-heading">Biplot of Student/Academic Peers</h4>
 <div class="image-container">
     <img src="img/Student Peers Biplot.png" style="width: 80%">
 </div>
+<br/>
 </details>
 
 <details>
 <summary>Graduation Rate against Research</summary>
-Population is R1 institutions.
+<p style="margin-left: 15px;">Population is R1 institutions.</p>
 <h4 class="caption-heading">Graduation Rate against Research</h4>
 <div class="image-container">
     <img src="img/Grad against Research Scatter.png" style="width: 60%">
 </div>
+<br/>
 </details>
 
 <details>
 <summary>Pell against Research</summary>
-Population is R1 institutions.
+<p style="margin-left: 15px;">Population is R1 institutions.</p>
 <h4 class="caption-heading">Pell against Research</h4>
 <div class="image-container">
     <img src="img/%25 Pell against Research Scatter.png" style="width: 60%">
 </div>
+<br/>
 </details>
 
 <details>
 <summary>Pell Graduation Rate Gap against Research</summary>
-Population is R1 institutions.
+<p style="margin-left: 15px;">Population is R1 institutions.</p>
 <h4 class="caption-heading">Pell Graduation Rate Gap against Research</h4>
 <div class="image-container">
     <img src="img/Pell Grad Rate Gap against Research Scatter.png" style="width: 60%">
 </div>
+<br/>
 </details>
 
 <details>
@@ -1465,12 +1469,15 @@ Population is R1 institutions.
     </tr>
   </tbody>
 </table>
+<br/>
 </details>
 
 <details>
 <summary>IPEDS PCA Variables and Loadings</summary>
 <br/>
-<a class="image-container" name="ipca"></a>
+<a name="ipca"></a>
+
+<div class="image-container">
 <table class="table">
 <thead>
 <tr style="text-align: right;">
@@ -3781,6 +3788,7 @@ Population is R1 institutions.
 </tr>
 </tbody>
 </table>
-
 </div>
+
+<br/>
 </details>
