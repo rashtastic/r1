@@ -421,7 +421,7 @@ Per-faculty research metrics measure productivity in articles, awards and highly
 Comparing institutions across thirteen metrics can be a challenge. What we currently test is considering those thirteen metrics to be coordinates of a space identifying a kind of "location" of institutions. In doing so, we can identify the Euclidean distance between any two points. We essentially apply a higher-dimensional analog of the Pythagorean Theorem. Having calculated distances, we find the twenty-five nearest institutions:
 
 1. University of South Florida
-2. Amherst College
+2. Amherst
 3. Tulane University
 4. Georgia State University
 5. University of South Carolina-Columbia
@@ -604,7 +604,7 @@ Thus I would propose three categories of candidate peers in increasing order of 
 
 <ol start="1">
   <li>University of South Florida</li>
-  <li>Amherst College</li>
+  <li>Amherst</li>
   <li>Tulane University</li>
   <li>University of South Carolina-Columbia</li>
   <li>Michigan State University</li>
