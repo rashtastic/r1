@@ -690,14 +690,13 @@ We now compare estimated selected Public R1 Peers against the peer selection pro
 <ul>
 	<li>Michigan State University</li>
 	<li>Rutgers University</li>
-	<li>University of Georgia</li>
 	<li>University of Illinois Urbana-Champaign</li>
 	<li>University of Iowa</li>
 	<li>University of Maryland</li>
 	<li>University of Minnesota</li>
 </ul>
 
-Overlaps between this selection and the 25 by Nearness are Michigan State University, Rutgers University, University of Arizona, and University of Georgia. The other institutions are shown to have several research metric values comparable to FSU, as well as metrics considerably beyond FSU values.
+Overlaps between this selection and the 25 by Nearness are Michigan State University, Rutgers University, and University of Arizona. The other institutions are shown to have several research metric values comparable to FSU, as well as metrics considerably beyond FSU values.
 
 <br/>
 
