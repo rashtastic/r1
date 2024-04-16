@@ -712,7 +712,7 @@ Overlaps between this selection and the 25 by Nearness are Michigan State Univer
 </div>
 <br/>
 
-<h4>Aspirational Peers:</h4>
+<h4>Aspirational AAU Peers:</h4>
 <ul>
 	<li>Ohio State University</li>
 	<li>Pennsylvania State University</li>
