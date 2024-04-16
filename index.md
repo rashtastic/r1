@@ -776,7 +776,7 @@ Remaining institutions have a mix of research metrics performing above and below
 	<li>Colorado State University</li>
 	<li>Iowa State University</li>
 	<li>North Carolina State University</li>
-	<li>The University of Tennessee-Knoxville</li>
+	<li>The University of Tennessee</li>
 	<li>University of Connecticut</li>
 	<li>University of Georgia</li>
 	<li>University of Illinois Chicago</li>
@@ -794,14 +794,12 @@ Peer selection overlaps include Amherst, Colorado State University, University o
 </div>
 <br/>
 
-<br/>
 <div class="image-container" style="display: flex;">
     <img src="img/radarbob/radar_NonAAU Peers_UniversityofNebraskaLincoln.png" style="width: 40%; margin-right: 10px;">
     <img src="img/radarbob/radar_NonAAU Peers_NCStateUniversity.png" style="width: 40%;">
 </div>
 <br/>
 
-<br/>
 <div class="image-container" style="display: flex;">
     <img src="img/radarbob/radar_NonAAU Peers_TheUniversityofTennesseeKnoxville.png" style="width: 40%; margin-right: 10px;">
     <img src="img/radarbob/radar_NonAAU Peers_VirginiaTech.png" style="width: 40%;">
