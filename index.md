@@ -226,7 +226,7 @@ IPEDS has extremely granular metrics on a broad range of institutional character
 
 IPEDS data is voluminous because of its level of detail. This level of detail produces an enormous amount of redundancy. For instance, consider that the strongest correlation in our data so far is between <code>Graduation Rate</code> and <code>Pell Graduation Rate</code>. The high correlation is to be expected. Now consider IPEDS data, which includes graduation rates calculated on nearly every possible combination of race, gender, age, residency, etc. We are sifting through thousands of additional metrics and selecting hundreds, but redundancy keeps things simple. All metrics showing high correlation ($\vert r\vert \ge .85$) with per-faculty research outcomes can be collapsed into a dozen coherent concepts, identifiable by which parts of IPEDS they were sourced from as well as their internal correlations.
 
-We collapse these twelve groups of metrics into twelve individual "constructs" by estimating rank-1 PCA representations of each group. The resulting groups and their rank-1 percent of variance explained are shown in the following table. A detailed listing of IPEDS variables included in each group can be found in [Appendix - IPEDS PCA Variables and Loadings](#ipca).
+We collapse these twelve groups of metrics into twelve individual "constructs" by estimating rank-1 PCA representations of each group. The resulting groups and their rank-1 percent of variance explained are shown in the following table. A detailed listing of IPEDS variables included in each group can be found in [Appendix - IPEDS PCA Variables and Loadings](#appendix-ipca).
 
 <br/>
 
@@ -633,7 +633,7 @@ Thus I would propose three categories of candidate peers in increasing order of 
 </ol>
 
 <h4>Remaining Nearby Institutions also Showing Proximity in Student Success Biplot</h4>
-(see Appendix)
+(see [Appendix](#appendix))
 
 <ol start="18">
   <li>Rutgers University</li>
@@ -808,9 +808,8 @@ Peer selection overlaps include Amherst, Colorado State University, University o
 </div>
 <br/>
 
-<br/>
-
 ## Appendix
+<a name="appendix"></a>
 
 <details>
 <summary>Biplot of Student/Academic Peers</summary>
@@ -819,8 +818,7 @@ Peer selection overlaps include Amherst, Colorado State University, University o
 <div class="image-container">
     <img src="img/Student Peers Biplot.png" style="width: 80%">
 </div>
-<br/>
-</details>
+</details><p>
 
 <details>
 <summary>Graduation Rate against Research</summary>
@@ -830,7 +828,7 @@ Peer selection overlaps include Amherst, Colorado State University, University o
     <img src="img/Grad against Research Scatter.png" style="width: 60%">
 </div>
 <br/>
-</details>
+</details><p>
 
 <details>
 <summary>Pell against Research</summary>
@@ -840,7 +838,7 @@ Peer selection overlaps include Amherst, Colorado State University, University o
     <img src="img/%25 Pell against Research Scatter.png" style="width: 60%">
 </div>
 <br/>
-</details>
+</details><p>
 
 <details>
 <summary>Pell Graduation Rate Gap against Research</summary>
@@ -850,7 +848,7 @@ Peer selection overlaps include Amherst, Colorado State University, University o
     <img src="img/Pell Grad Rate Gap against Research Scatter.png" style="width: 60%">
 </div>
 <br/>
-</details>
+</details><p>
 
 <details>
 <summary>Institution Abbreviations</summary>
@@ -1597,12 +1595,12 @@ Peer selection overlaps include Amherst, Colorado State University, University o
   </tbody>
 </table>
 <br/>
-</details>
+</details><p>
 
+<a name="appendix-ipca"></a>
 <details>
 <summary>IPEDS PCA Variables and Loadings</summary>
 <br/>
-<a name="ipca"></a>
 
 <div class="image-container">
 <table class="table">
