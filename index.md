@@ -650,7 +650,7 @@ We apply the two primary peer identification methods on R1 Public institutions.
 
 <ol>
     <li>University of South Florida</li>
-    <li>University of Massachusetts-Amherst</li>
+    <li>Amherst</li>
     <li>Georgia State University</li>
     <li>University of South Carolina-Columbia</li>
     <li>University of Georgia</li>
@@ -681,6 +681,133 @@ We apply the two primary peer identification methods on R1 Public institutions.
 <div class="image-container">
     <img src="img/R1 Public Research Peers Biplot.png" style="width: 80%">
 </div>
+<br/>
+
+## Comparison Against Manual Peers Selection
+We now compare estimated selected Public R1 Peers against the peer selection produced from the Dr. Brown meeting. That session produced four tentative groups of peers: AAU Peers, Aspirational AAU Peers, Lesser AAU Peers, and Non-AAU Peers. We will observe that selection relative to the Top 25 R1 Publics selected above.
+
+<h4>AAU Peers:</h4>
+<ul>
+	<li>Michigan State University</li>
+	<li>Rutgers University</li>
+	<li>University of Georgia</li>
+	<li>University of Illinois Urbana-Champaign</li>
+	<li>University of Iowa</li>
+	<li>University of Maryland</li>
+	<li>University of Minnesota</li>
+</ul>
+
+Overlaps between this selection and the 25 by Nearness are Michigan State University, Rutgers University, University of Arizona, and University of Georgia. The other institutions are shown to have several research metric values comparable to FSU, as well as metrics considerably beyond FSU values.
+
+<br/>
+
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_Peers_Illinois.png" style="width: 40%; margin-right: 10px;">
+    <img src="img/radarbob/radar_Peers_Iowa.png" style="width: 40%;">
+</div>
+<br/>
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_Peers_UniversityofMarylandCollegePark.png" style="width: 40%; margin-right: 10px;">
+    <img src="img/radarbob/radar_Peers_UniversityofMinnesotaTwinCities.png" style="width: 40%;">
+</div>
+<br/>
+
+<h4>Aspirational Peers:</h4>
+<ul>
+	<li>Ohio State University</li>
+	<li>Pennsylvania State University</li>
+	<li>UC Irvine</li>
+	<li>UC Santa Barbara</li>
+	<li>University of Virginia</li>
+	<li>University of Wisconsin-Madison</li>
+	<li>UT Austin</li>
+</ul>
+
+Of these, Pennsylvania State University and University of Virginia are identified by Nearness as Public R1 peers. The others are accurately described as aspirational, with observed research metrics usually outperforming FSU.
+
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_Aspirational Peers_OhioStateUniversityMainCampus.png" style="width: 40%; margin-right: 10px;">
+    <img src="img/radarbob/radar_Aspirational Peers_UTAustin.png" style="width: 40%;">
+</div>
+<br/>
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_Aspirational Peers_UCI.png" style="width: 40%; margin-right: 10px;">
+    <img src="img/radarbob/radar_Aspirational Peers_UCSB.png" style="width: 40%;">
+</div>
+<br/>
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_Aspirational Peers_UniversityofWisconsinMadison.png" style="width: 40%;">
+</div>
+<br/>
+
+<h4>Lesser AAU Peers:</h4>
+<ul>
+	<li>Indiana University-Bloomington</li>
+	<li>UC Riverside</li>
+	<li>UC Santa Cruz</li>
+	<li>University at Buffalo</li>
+	<li>University of Kansas</li>
+	<li>University of Missouri</li>
+	<li>University of Oregon</li>
+</ul>
+
+UC Riverside and University of Missouri were identified as peers by nearness.
+
+Remaining institutions have a mix of research metrics performing above and below FSU. By the metrics observed here, these institutions can likely be listed as FSU Peers or Lesser Peers.
+
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_Lesser Peers_IUB.png" style="width: 40%; margin-right: 10px;">
+    <img src="img/radarbob/radar_Lesser Peers_UniversityatBuffalo.png" style="width: 40%;">
+</div>
+<br/>
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_Lesser Peers_UCSantaCruz.png" style="width: 40%; margin-right: 10px;">
+    <img src="img/radarbob/radar_Lesser Peers_UniversityofKansas.png" style="width: 40%;">
+</div>
+<br/>
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_Lesser Peers_UO.png" style="width: 40%;">
+</div>
+<br/>
+
+<h4>Non-AAU Peers:</h4>
+<ul>
+	<li>Amherst</li>
+	<li>Colorado State University</li>
+	<li>Iowa State University</li>
+	<li>North Carolina State University</li>
+	<li>The University of Tennessee-Knoxville</li>
+	<li>University of Connecticut</li>
+	<li>University of Georgia</li>
+	<li>University of Illinois Chicago</li>
+	<li>University of Kentucky</li>
+	<li>University of Nebraska</li>
+	<li>Virginia Tech</li>
+</ul>
+
+Peer selection overlaps include Amherst, Colorado State University, University of Connecticut, University of Georgia, and University of Illinois Chicago. Institutions not selected by Nearness do show a tight closeness to FSU on most metrics, with usually a single metric standing out. Iowa State, Nebraska, and NCSU have higher relative values of <code>Phase 2 Expenditures/Faculty</code>. Virginia Tech is tightly close to FSU except for <code>Phase 2 Expenditures/Faculty</code> and <code>Conference Proceedings/Faculty</code>; Tennessee outperforms in <code>Articles/Faculty</code>; and Kentucky in <code>Clinical Trials/Faculty</code>.
+
+<br/>
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_NonAAU Peers_ISU.png" style="width: 40%; margin-right: 10px;">
+    <img src="img/radarbob/radar_NonAAU Peers_UniversityofKentucky.png" style="width: 40%;">
+</div>
+<br/>
+
+<br/>
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_NonAAU Peers_UniversityofNebraskaLincoln.png" style="width: 40%; margin-right: 10px;">
+    <img src="img/radarbob/radar_NonAAU Peers_NCStateUniversity.png" style="width: 40%;">
+</div>
+<br/>
+
+<br/>
+<div class="image-container" style="display: flex;">
+    <img src="img/radarbob/radar_NonAAU Peers_TheUniversityofTennesseeKnoxville.png" style="width: 40%; margin-right: 10px;">
+    <img src="img/radarbob/radar_NonAAU Peers_VirginiaTech.png" style="width: 40%;">
+</div>
+<br/>
+
 <br/>
 
 ## Appendix
