@@ -429,7 +429,7 @@ Comparing institutions across thirteen metrics can be a challenge. What we curre
 7. Michigan State University
 8. University of Connecticut
 9. Arizona State University
-10. University of Illinois at Chicago
+10. University of Illinois Chicago
 11. The University of Alabama
 12. University of Missouri
 13. SUNY at Albany
@@ -610,7 +610,7 @@ Thus I would propose three categories of candidate peers in increasing order of 
   <li>Michigan State University</li>
   <li>University of Connecticut</li>
   <li>Arizona State University</li>
-  <li>University of Illinois at Chicago</li>
+  <li>University of Illinois Chicago</li>
 </ol>
 
 <h4>Remaining Top Ten by Nearness</h4>
