@@ -692,9 +692,9 @@ We apply the two primary peer identification methods on R1 Public institutions.
 <br/>
 
 ## Comparison Against Manual Peers Selection
-We now compare estimated selected Public R1 Peers against the peer selection produced from the Dr. Brown meeting. That session produced four tentative groups of peers: AAU Peers, Aspirational AAU Peers, Lesser AAU Peers, and Non-AAU Peers. We will observe that selection relative to the Top 25 R1 Publics selected above.
+We now compare the selection of Public R1 Peers against the peer selection produced from the Dr. Brown meeting. That session produced four tentative groups of peers: AAU Peers, Aspirational AAU Peers, Lesser AAU Peers, and Non-AAU Peers. We will observe that selection relative to the Top 25 R1 Publics selected above.
 
-<h4>AAU Peers:</h4>
+<h4>AAU Peers from Manual Selection:</h4>
 <ul>
 	<li>Michigan State University</li>
 	<li>Rutgers University</li>
@@ -719,7 +719,7 @@ Overlaps between this selection and the 25 by Nearness are Michigan State Univer
 </div>
 <br/>
 
-<h4>Aspirational AAU Peers:</h4>
+<h4>Aspirational AAU Peers from Manual Selection:</h4>
 <ul>
 	<li>Ohio State University</li>
 	<li>Pennsylvania State University</li>
@@ -747,7 +747,7 @@ Of these, Pennsylvania State University and University of Virginia are identifie
 </div>
 <br/>
 
-<h4>Lesser AAU Peers:</h4>
+<h4>Lesser AAU Peers from Manual Selection:</h4>
 <ul>
 	<li>Indiana University-Bloomington</li>
 	<li>UC Riverside</li>
@@ -777,7 +777,7 @@ Remaining institutions have a mix of research metrics performing above and below
 </div>
 <br/>
 
-<h4>Non-AAU Peers:</h4>
+<h4>Non-AAU Peers from Manual Selection:</h4>
 <ul>
 	<li>Amherst</li>
 	<li>Colorado State University</li>
