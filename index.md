@@ -390,7 +390,7 @@ The initial distribution of institutions appears valid. To identify potential pe
     <img src="img/Research Peers Biplot Zoom.png" style="width: 80%">
 </div>
 
-Before dwelling too deeply on nearby institutions, we view another biplot: Type I research metrics and IPEDS enrollment constructs. That is, we train PCA on per-faculty metrics for articles, awards, highly-prestigious awards, citations, patents, and National Academy memberships. We also include new constructs for professor salaries and discipline-specific enrollment.
+Before dwelling too deeply on nearby institutions, we view another biplot: Type I research metrics and IPEDS enrollment constructs. That is, we fit PCA on per-faculty metrics for articles, awards, highly-prestigious awards, citations, patents, and National Academy memberships. We also include new constructs for professor salaries and discipline-specific enrollment.
 
 <br/>
 
