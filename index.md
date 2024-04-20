@@ -360,7 +360,7 @@ We view how these new metrics correlate with two selected metrics: <code>Citatio
 
 <br/>
 
-<h4 class="caption-heading">Research Metrics and IPEDS Constructs Correlation Heatmap</h4>
+<h4 class="caption-heading">IPEDS Constructs against Phase 1 Expenditures per Faculty</h4>
 <div class="image-container">
     <img src="img/IPEDS-Phase1 Perfac Scatter.png" style="width: 55%">
 </div>
