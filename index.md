@@ -602,11 +602,11 @@ The nearest ten institutions were still fairly spread out for per-faculty metric
 
 ## Peer Selection
 
-Based on the above charts, the nearest ten institutions appear convincingly near to FSU as peers.
+The above charts show that the nearest ten institutions appear convincingly close to FSU as peers.
 
 The remaining schools are less clear. Here, we turn to our biplots to look for overlapping selections as supporting evidence.
 
-Thus I would propose three categories of candidate peers in increasing order of confidence:
+Based on results from nearness and biplots, I propose three categories of candidate peers in increasing order of confidence:
 
 <h4>Institutions Selected as Top Ten by Nearness and Showing Proximity in Biplots</h4>
 
