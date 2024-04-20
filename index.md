@@ -418,7 +418,15 @@ Nonetheless, we note the presence of overlaps of FSU neighbors from this biplot 
 
 Per-faculty research metrics measure productivity in articles, awards and highly-prestigious awards, books and chapters, citations, clinical trials, conference proceedings, National Academy memberships, patents, Phase 1 and 2 expenditures, and research doctorates produced.
 
-Comparing institutions across thirteen metrics can be a challenge. What we currently test is considering those thirteen metrics to be coordinates of a space identifying a kind of "location" of institutions. In doing so, we can identify the Euclidean distance between any two points. We essentially apply a higher-dimensional analog of the Pythagorean Theorem. Having calculated distances, we find the twenty-five nearest institutions:
+Comparing institutions across thirteen metrics can be a challenge. What we currently test is considering those thirteen metrics to be coordinates of a space identifying a kind of "location" of institutions. In doing so, we can identify the Euclidean distance between any two points. We essentially apply a higher-dimensional analog of the Pythagorean Theorem.
+
+For institutions $A$ and $B$, where $A_i$ and $B_i$ represent those institutions' values for metric $i$,
+
+<center>
+$Distance(A, B) = \sqrt{(A_1 - B_1)^2 + (A_2 - B_2)^2 + \ldots + (A_{13} - B_{13})^2}$
+</center>
+
+Having calculated distances, we find the twenty-five nearest institutions:
 
 1. University of South Florida
 2. Amherst
