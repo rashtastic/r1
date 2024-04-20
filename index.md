@@ -596,7 +596,7 @@ Having calculated institutions "near" to FSU on the 13 selected metrics, we conf
 
 Overall, it is observed that the top 10 neighbors are close to FSU values on most metrics. The top 25 spreads the range out further in most cases, but still in a manner centered around FSU.
 
-The nearest ten institutions were still fairly spread out for per-faculty metrics for clinical trials, patents, highly-prestigious awards, and National Academy members, despite the other research metrics being concentrated around FSU. This suggests that the common traits of these peer groups are sufficient to explain some but not all of our metrics.
+The nearest ten institutions were still fairly spread out for per-faculty metrics of highly-prestigious awards, phase 2 expenditures, and patents. This suggests that the common traits of these peer groups are sufficient to explain some but not all of our metrics.
 
 <br/>
 
