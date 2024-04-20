@@ -220,13 +220,13 @@ While the collective relationships are not perfectly related, they appear adequa
 
 ## Correlations with IPEDS Indicators
 
-Incorporating additional information from IPEDS may provide more explanatory power. Our original metrics of focus may be narrowly focused in ways that a richer array of information could improve.
+Incorporating additional information from IPEDS may provide more explanatory power. A broader array of information could provide additional context of how and why our original metrics vary across institutions.
 
-IPEDS has extremely granular metrics on a broad range of institutional characteristics. We sought IPEDS metrics which showed high correlations with the per-faculty research productivity metrics we are examining. Out of roughly ten thousand additional IPEDS metrics, several hundred emerged as strong correlates.
+IPEDS has extremely granular data on a range of institutional characteristics. Here, we seek IPEDS metrics which show high correlations with per-faculty research metrics. Out of roughly ten thousand additional IPEDS metrics, several hundred emerge as strong correlates.
 
-IPEDS data is voluminous because of its level of detail. This level of detail produces an enormous amount of redundancy. For instance, consider that the strongest correlation in our data so far is between <code>Graduation Rate</code> and <code>Pell Graduation Rate</code>. The high correlation is to be expected. Now consider IPEDS data, which includes graduation rates calculated on nearly every possible combination of race, gender, age, residency, etc. We are sifting through thousands of additional metrics and selecting hundreds, but redundancy keeps things simple. All metrics showing high correlation ($\vert r\vert \ge .85$) with per-faculty research outcomes can be collapsed into a dozen coherent concepts, identifiable by which parts of IPEDS they were sourced from as well as their internal correlations.
+IPEDS data is voluminous because of its level of detail. This level of detail produces an enormous amount of redundancy. For instance, consider that the strongest correlation in our data so far is between <code>Graduation Rate</code> and <code>Pell Graduation Rate</code>. The high correlation is to be expected. Now consider IPEDS data, which includes graduation rates calculated on nearly every possible combination of race, gender, age, residency, etc. We are sifting through thousands of additional metrics and selecting hundreds, but redundancy keeps things simple. All metrics found to have high correlation ($\vert r\vert \ge .85$) with per-faculty research outcomes can be collapsed into a dozen coherent concepts.
 
-We collapse these twelve groups of metrics into twelve individual "constructs" by estimating rank-1 PCA representations of each group. The resulting groups and their rank-1 percent of variance explained are shown in the following table. A detailed listing of IPEDS variables included in each group can be found in [Appendix - IPEDS PCA Variables and Loadings](#appendix-ipca).
+We reduce each of these twelve metric groups into individual "constructs" by estimating rank-1 PCA representations of each group. This provides our analysis additional data points which may shed light on the covariance structure of research metrics. The resulting groups and their rank-1 percent of variance explained are shown in the following table. A detailed listing of IPEDS variables included in each group can be found in [Appendix - IPEDS PCA Variables and Loadings](#appendix-ipca).
 
 <br/>
 
