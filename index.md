@@ -184,7 +184,7 @@ First, we examine the cluster of research outputs which appeared to all covary. 
 
 Per-faculty metrics for Citations, Articles, and Patents show positive correlations, and would show higher values with the removal of some likely outlier institutions.
 
-<code>Highly-Prestigious Awards/Faculty</code> and <code>National Academy Members/Faculty</code> follow general positive correlations with the other metrics, but their distributions are more dominated by clustering at low values. This may be  visual artifact of outliers in both cases. Both metrics show convincing positive correlations with <code>Awards/Faculty</code>. Therefore, though they may be less sensitive measures of research productivity, they appear to fit in with this cluster of metrics. Overall, thus cluster of metrics may reflect a single coherent notion of research activity. We categorize these as "Type I" metrics.
+<code>Highly-Prestigious Awards/Faculty</code> and <code>National Academy Members/Faculty</code> follow general positive correlations with the other metrics, but their distributions are more dominated by clustering at low values. This may be  visual artifact of outliers in both cases. Both metrics show convincing positive correlations with <code>Awards/Faculty</code>. Therefore, though they may be less sensitive measures of research productivity, they appear to fit in with this group of metrics. Overall, this cluster of metrics may reflect a single coherent notion of research activity. We categorize these as "Type I" metrics.
 
 <h4>Type II Research Metrics</h4>
 
