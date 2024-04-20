@@ -458,7 +458,7 @@ Having calculated distances, we find the twenty-five nearest institutions:
 
 ### Nearest 10 vs. Nearest 25
 
-We now observe the tightness of candidate peers by metric relative to all R1's.
+Having calculated institutions "near" to FSU on the 13 selected metrics, we confirm the meaning of this proximity against individual metrics. Institutions selected as the nearest 10 and nearest 25 are compared against all R1's.
 
 
 <div class="cols">
