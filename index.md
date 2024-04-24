@@ -26,7 +26,7 @@ Further relevant metrics are pulled from IPEDS.
 <summary>Additional Data Details</summary>
 <p>All data used in statistical models is first normalized to have mean 0 and standard deviation 1.</p>
 
-<p>Research expenditures metrics are <code>Phase 1 Expenditures</code> and <code>Phase 2 Expenditures</code>. "These metrics, including their per-faculty figures, are initially measured on a scale of thousands. For this analysis we apply a log transform.</p>
+<p>Research expenditures metrics are <code>Phase 1 Expenditures</code> and <code>Phase 2 Expenditures</code>. These metrics, including their per-faculty figures, are initially measured on a scale of thousands. For this analysis we apply a log transform.</p>
 
 <p>Metrics of Primary Interest:</p>
   <ul>
